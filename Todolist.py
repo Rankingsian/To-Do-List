@@ -1,10 +1,10 @@
 def display_menu():
     print("\nTo-Do List Options:")
     print("1. View To-Do List")
-    print("2. Add Task")
-    print("3. Remove Task")
-    print("4. Mark Task as Done")
-    print("5. Exit")
+    print("2. Add Task.")
+    print("3. Remove Task.")
+    print("4. Mark Task as Done.")
+    print("5. Exit.")
 
 def view_tasks(tasks):
     if not tasks:
