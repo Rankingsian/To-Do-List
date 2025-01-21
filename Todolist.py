@@ -14,11 +14,14 @@ def view_tasks(tasks):
         for idx, (task, done) in enumerate(tasks, 1):
             status = "Done" if done else "Not Done"
             print(f"{idx}. {task} [{status}]")
+            
 
 def add_task(tasks):
     task = input("\nEnter the task: ")
     tasks.append((task, False))
     print(f"Task '{task}' added to the list.")
+
+
 
 def remove_task(tasks):
     try:
@@ -31,6 +34,8 @@ def remove_task(tasks):
             print("Invalid task number.")
     except ValueError:
         print("Please enter a valid number.")
+
+
 
 def mark_task_done(tasks):
     try:
